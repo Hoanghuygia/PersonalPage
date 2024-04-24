@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href=".\assests\css\style.css">
+    <title>Home</title>
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"><box-icon name='menu' ></box-icon></div>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Hoang Gia Huy</h1>
+            <p>University Student in Computer Science</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#" class="btn">Download my CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Runner</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxs-objects-horizontal-left' ></i>
+                    <h3>Appication Developer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bxs-game' ></i>
+                    <h3>Game Developer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+        </div>
+
+        <!-- <div class="home-img">
+            <img src="assests/images/home.png" alt="home.png">
+        </div> -->
+    </section>
+
+    <!-- ABOUT SECTION  -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I am there to help you</h3>
+            <p>I am student from International University</p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- SERVICE SECTION -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>I am a junior web developer</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>I am a junior web developer</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>I am a junior web developer</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">Latest</div>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="assests/images/project.jpg" alt="project.jpg">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>this is a web project</p>
+                    <a href="#"><i class='bx bx-link-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="assests/images/project.jpg" alt="project.jpg">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>this is a web project</p>
+                    <a href="#"><i class='bx bx-link-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="assests/images/project.jpg" alt="project.jpg">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>this is a web project</p>
+                    <a href="#"><i class='bx bx-link-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!!</span></h2>
+
+        <form action="#" method="post">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="number" placeholder="Phone Numebr">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+           
+        </form>
+    </section> 
+
+    <!-- FOOTER SECTION -->
+    <footter class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Codehal | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><box-icon name='up-arrow-alt'></box-icon></a></div>
+    </footter>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
