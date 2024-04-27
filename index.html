@@ -18,8 +18,8 @@
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Service</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Education</a>
+            <a href="#portfolio">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -33,16 +33,17 @@
         <div class="home-content">
             <h3>Hello, I am</h3>
             <h1>Hoang Gia Huy</h1>
-            <p>University Student in Computer Science</p>
+            <p>University Student in Computer Science,</p>
+            <p>VNU-HCM International University</p>
 
             <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100009014052461"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/Hoanghuygia"><i class='bx bxl-github'></i></a>
+                <!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a> -->
+                <a href="https://www.linkedin.com/in/hoang-huy-087966304/"><i class='bx bxl-linkedin'></i></a>
             </div>
 
-            <a href="#" class="btn">Download my CV</a>
+            <a href="assests\others\HGH_CV.pdf" download="HGH_CV.pdf" class="btn">Download my CV</a>
         </div>
 
         <div class="profession-container">
@@ -53,16 +54,8 @@
                     <h3>Web Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
-                    <i class='bx bx-code-alt' ></i>
-                    <h3>Runner</h3>
-                </div>
-                <div class="profession" style="--i:2;">
-                    <i class='bx bxs-objects-horizontal-left' ></i>
-                    <h3>Appication Developer</h3>
-                </div>
-                <div class="profession" style="--i:3;">
                     <i class='bx bxs-game' ></i>
-                    <h3>Game Developer</h3>
+                    <h3>App Developer</h3>
                 </div>
 
                 <div class="circle"></div>
@@ -84,44 +77,59 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
+            <h2 class="heading">Skills & Background <span>Knowledge</span></h2>
             <h3>Hi, I am there to help you</h3>
-            <p>I am student from International University</p>
-
+            <p>I am student from VNU-HCM International University</p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td class="column1">Programing</td>
+                        <td class="column2">Java, Javascript, C#, C</td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Framework</td>
+                        <td class="column2">Nodejs, Reactjs, Expressjs</td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Database</td>
+                        <td class="column2">SQL(MySQL, Postgres), NoSQL(MongoDB)</td>
+                    </tr>
+                    <tr>
+                        <td class="column1">API development</td>
+                        <td class="column2">RESTful API design and implementation</td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Tool</td>
+                        <td class="column2">Docker, Unity</td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Language</td>
+                        <td class="column2">English</td>
+                    </tr>
+                </table>
+            </div>
+            
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
 
-    <!-- SERVICE SECTION -->
+    <!-- EDUCATION SECTION -->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">My <span>Education</span></h2>
 
         <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
-                <p>I am a junior web developer</p>
-                <a href="#" class="btn">Read More</a>
+                <div class="services-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="school-year">2021-2025</p>
+                    <p class="text">(Expected)</p>
+                    <button class="btn js-education-button">Read More</button>
+                </div>
             </div>
 
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
-                <p>I am a junior web developer</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
-                <p>I am a junior web developer</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-        </div>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
+    <!-- PORTFOLIO/EXPERIENCE SECTION -->
     <section class="portfolio" id="portfolio">
         <div class="heading">Latest</div>
 
@@ -184,6 +192,25 @@
             <a href="#home"><box-icon name='up-arrow-alt'></box-icon></a></div>
     </footter>
 
+    <!-- MODAL -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+                <div class="js-modal-close modal-close js-close"><i class='bx bxs-x-circle' ></i></div>
+                <p class="university centered">VNU-HCM International University</p>
+                <h2 class="department centered">Bachelor of Science in Computer Science</h2>
+                <p class="school-year centered">2021-2025 (Expected)</p>
+                <p class="subject centered">Subject:  Principle of Database Management, Data Structure
+                        and Algorithms, Object-Oriented Programming, Web
+                        Application Development, Object-Oriented Analysis and
+                        Design.
+                </p>
+                <p class="gpa centered">Current GPA: 3.4 – Degree classification: Very Good</p>
+
+                <button class="btn js-close">OK</button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <script src="js/script.js"></script>
