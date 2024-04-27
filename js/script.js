@@ -77,3 +77,28 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .contact form',   { origin: 'bottom' });
+
+//modal
+const btn = document.querySelector('.js-education-button');
+const modal = document.querySelector('.js-modal');
+const modalClose = document.querySelectorAll('.js-close');
+const modalContainer = document.querySelector('.js-modal-container');
+
+function showSpecificEducation(){
+    modal.classList.add('open');
+}
+
+function hideSpecificEducation(){
+    modal.classList.remove('open');
+}
+
+for(const close of modalClose){
+    close.addEventListener('click', hideSpecificEducation);
+}
+
+modal.addEventListener('click', hideSpecificEducation);
+btn.addEventListener('click', showSpecificEducation);
+modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
