@@ -419,6 +419,13 @@ span{
     margin-bottom: 4rem;
 }
 
+.portfolio .experience-container h3{
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
 .portfolio .portfolio-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -842,6 +849,88 @@ span{
     font-size: 1.6rem;
     margin-top: 2rem;
 }
+.modal .modal-container .btn{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
 
+/* modal for project */
+.modal-project{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .4);
+}
 
+.open.modal-project{
+    display: flex;
+}
 
+.modal-project .modal-container-project{
+    background-color: #fff;
+    width: 600px;
+    /* max-width: calc(80% - 32px); */
+    min-height: 200px;
+    position: relative;
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    /* animation: modalFadeIn ease 0.5s; */
+}
+
+.modal-container-project h2{
+    font-size: 2.6rem;
+}
+
+.modal-container-project .project-type{
+    margin-top: 0rem;
+}
+
+.modal-container-project .modal-close-project{
+    float: right;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: var(--main-color); 
+}
+.modal-close-project i{
+    /* box-shadow: 0 .2rem .5rem var(--shadow-color); */
+    border: .2rem solid transparent;
+}
+
+.modal-close-project i:hover{
+    opacity: .8;
+}
+
+.modal-container-project p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.modal-container-project .description{
+    display: inline-block;
+}
+.modal-project .modal-container-project .btn{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.modal-project .modal-container-project .duration{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.modal-container-project span{
+    font-weight: bold;
+}

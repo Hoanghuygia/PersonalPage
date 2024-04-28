@@ -78,7 +78,8 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .contact form',   { origin: 'bottom' });
 
-//modal
+//modal education
+{
 const btn = document.querySelector('.js-education-button');
 const modal = document.querySelector('.js-modal');
 const modalClose = document.querySelectorAll('.js-close');
@@ -101,4 +102,42 @@ btn.addEventListener('click', showSpecificEducation);
 modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+}
+
+//modal project 
+document.querySelectorAll('.js-modal-open-project').forEach(function(btn, index) {
+    btn.addEventListener('click', function() {
+        let classNames = Array.from(btn.classList);
+        let className = classNames[classNames.length - 1];
+        let modal = document.querySelector('.modal-project' + '.' + className);
+        
+        modal.classList.add('open');
+    });
+});
+
+document.querySelectorAll('.js-close-project').forEach(function(btn){
+    btn.addEventListener('click', function(){
+        let classNames = Array.from(btn.classList);
+        let className = classNames[classNames.length - 1];
+        let modalRemoved = document.querySelector('.modal-project' + '.' + className);
+
+        modalRemoved.classList.remove('open'); 
+    })
+})
+
+document.querySelectorAll('.js-modal-project').forEach((modal) =>{
+    modal.addEventListener('click', ()=>{
+        modal.classList.remove('open');
+    })
+})
+
+document.querySelectorAll('.js-modal-container-project').forEach((modalContainer) =>{
+    modalContainer.addEventListener('click', (event)=>{
+        event.stopPropagation();
+    })
+})
+    
+
+
+
 
